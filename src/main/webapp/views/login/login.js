@@ -24,14 +24,32 @@
 	/**
 	 * La controller pour cette route.
 	 */
-	.controller('loginCtrl', ['$scope','$state',function loginController($scope,$state) {
+	.controller('loginCtrl', ['$scope','$state','$http',function loginController($scope,$state,$http) {
+		
 		
 		$scope.verifier = function(){
-			if($scope.password == "test" && $scope.login == "toto"){
-				$state.go('calendar');
+			/*if($scope.password == "test" && $scope.login == "toto"){
+				$state.go('home');
 			}else{
 				$scope.value =	"Mauvais login ou mot de passe" ;
-			}
+			}*/
+			
+		//$scope.value = authService.query() ;
+
+		//$scope.value = authService.get();
+			
+			$http.post('/auth/4587', 'test', {
+				
+			
+			}).
+			success(function(data, status, headers, config) {
+				alert('toto');
+			}).
+			error(function(data, status, headers, config){
+				alert('erreur');
+			});
+			
+			
 		};
 		
 	}]);

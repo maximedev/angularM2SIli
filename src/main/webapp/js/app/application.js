@@ -1,7 +1,8 @@
 (function() {
 'use strict';
 
-var app = angular.module('application', ['ui.router','application.login','application.calendar']);
+var app = angular.module('application', ['ui.router','application.login','application.calendar',
+                                         'application.home','auth']);
 	app.run(['$rootScope',function($rootScope) {}])
 
 		/*

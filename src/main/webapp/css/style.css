@@ -95,38 +95,55 @@ body {
 }
 
 #page {
-    margin: 20px auto;
+    margin: auto;
     width: 960px;
-    text-align: left;
-}
+  /*  text-align: left;
+*/}
 
 #pageBody {
     padding: 20px;
     background: #EEE;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 1px #FFF inset;
-    text-align: left;
+}
+
+.header{
+	cursor:pointer;
 }
 
 /*
- ================================================================================
+ =======================HOME=========================================================
 */
 
-.todoTitle {
-    font-weight: bold;
+.menuGauche{
+	float:left;
+	width:200px;
+	text-align:left;
 }
 
-.todoDescription {
-    font-style: italic;
-    color: #888;
+.menuDroit{
+	float:right;
+	width:200px;
+	text-align:left;
 }
 
-#todoList a,
-#todoList a:visited,
-#todoList a:active,
-#todoList a:hover {
-    text-decoration: none;
-    border-bottom: dashed 1px #888;
+.content{
+ 	margin-left: 200px;
+    text-align: justify;
+    width: 500px;
 }
 
+.gestionButton{
+	margin-left: 500px;
+	width:400px;
+}
+
+.footer{
+	background: none repeat scroll 0 0 #EEEEEE;
+	text-align: center;
+	width:960px;
+	margin-top:20px;
+	  border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 1px #FFF inset;
+}
 
